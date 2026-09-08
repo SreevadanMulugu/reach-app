@@ -1,24 +1,43 @@
 {
   "expo": {
-    "name": "plains-carpool-mobile",
-    "slug": "plains-carpool-mobile",
+    "name": "Reach",
+    "slug": "reach-outreach",
     "version": "1.0.0",
     "orientation": "portrait",
+    "backgroundColor": "#000000",
+    "userInterfaceStyle": "dark",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "backgroundColor": "#000000",
+      "resizeMode": "contain"
     },
     "android": {
+      "package": "com.ridhira.reach",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+        "backgroundColor": "#000000"
+      },
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ]
     },
+    "plugins": [
+      "expo-sqlite",
+      "expo-document-picker",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#000000",
+          "resizeMode": "contain"
+        }
+      ],
+      "expo-status-bar",
+      "expo-web-browser"
+    ],
+    "scheme": "reach-outreach",
     "web": {
-      "favicon": "./assets/favicon.png"
+      "bundler": "metro"
     }
   }
 }
